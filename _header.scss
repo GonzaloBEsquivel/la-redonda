@@ -1,0 +1,66 @@
+.cabecera {
+    display: block;
+    padding: 15px;
+    background-color: $gray;
+    border-bottom: 1.5px solid;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    &__nav{
+        // border: 1px solid;
+        max-width: 1200px;
+        margin: 0 auto;
+        // padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &__logoTitulo {
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0 15px;
+        }
+        &__logo {
+            border-radius: 50%;
+            height: 100px;
+        }
+        &__titulo {
+            // border: 1px solid blue;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: $darkgreen;
+            font-size: 1.5em;
+        }
+        &__modal {
+            margin: 25px;
+            color: $white;
+            .bi-list {
+                font-size: 40px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        // &__menu {
+        //     display: none;
+        // }
+        &__items {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: bold;
+            &:hover{
+                color: $lightgreen;
+                border-bottom: 2px solid $lightgreen;
+            }
+        }
+    }
+
+}
